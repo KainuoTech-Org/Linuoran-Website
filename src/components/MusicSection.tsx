@@ -68,23 +68,21 @@ export default function MusicSection() {
 
                 {/* Inline embed player */}
                 {isActive && (
-                  <div className="px-4 pb-8 bg-[#1A1A18] -mx-4">
-                    <div className="pt-4 pb-2">
-                      <iframe
-                        title={t(titleKey)}
-                        frameBorder="no"
-                        width="100%"
-                        height="86"
-                        allow="autoplay"
-                        src={`https://music.163.com/outchain/player?type=2&id=${song.id}&auto=1&height=66`}
-                        className="max-w-2xl block"
-                      />
-                    </div>
+                  <div className="pb-6 bg-[#1A1A18] -mx-4 px-4 flex items-center gap-6">
+                    <iframe
+                      title={t(titleKey)}
+                      frameBorder="no"
+                      width="330"
+                      height="86"
+                      allow="autoplay"
+                      src={`https://music.163.com/outchain/player?type=2&id=${song.id}&auto=1&height=66`}
+                      style={{ display: "block", flexShrink: 0 }}
+                    />
                     <a
                       href={`https://music.163.com/#/song?id=${song.id}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block text-[10px] uppercase tracking-[0.25em] text-[#555550] hover:text-[#A3907A] transition-colors mt-2"
+                      className="text-[10px] uppercase tracking-[0.25em] text-[#555550] hover:text-[#A3907A] transition-colors whitespace-nowrap"
                     >
                       在网易云音乐中打开 →
                     </a>
