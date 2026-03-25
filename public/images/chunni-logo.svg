@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" fill="none">
+  <rect width="400" height="480" rx="20" fill="#B5BC8A"/>
+  <!-- Music staff lines with eye/leaf shapes -->
+  <g transform="translate(80, 60)">
+    <!-- Line 1 with large leaf -->
+    <line x1="0" y1="30" x2="240" y2="30" stroke="white" stroke-width="2"/>
+    <ellipse cx="120" cy="30" rx="50" ry="18" fill="white"/>
+    
+    <!-- Line 2 with small leaves -->
+    <line x1="0" y1="70" x2="240" y2="70" stroke="white" stroke-width="2"/>
+    <ellipse cx="70" cy="70" rx="28" ry="12" fill="white"/>
+    <ellipse cx="170" cy="70" rx="28" ry="12" fill="white"/>
+    
+    <!-- Line 3 with large leaf -->
+    <line x1="0" y1="110" x2="240" y2="110" stroke="white" stroke-width="2"/>
+    <ellipse cx="120" cy="110" rx="50" ry="18" fill="white"/>
+    
+    <!-- Line 4 with small leaves -->
+    <line x1="0" y1="150" x2="240" y2="150" stroke="white" stroke-width="2"/>
+    <ellipse cx="70" cy="150" rx="28" ry="12" fill="white"/>
+    <ellipse cx="170" cy="150" rx="28" ry="12" fill="white"/>
+    
+    <!-- Line 5 with medium leaf -->
+    <line x1="0" y1="190" x2="240" y2="190" stroke="white" stroke-width="2"/>
+    <ellipse cx="120" cy="190" rx="40" ry="15" fill="white"/>
+    
+    <!-- Line 6 with small leaves -->
+    <line x1="0" y1="230" x2="240" y2="230" stroke="white" stroke-width="2"/>
+    <ellipse cx="80" cy="230" rx="25" ry="10" fill="white"/>
+    <ellipse cx="160" cy="230" rx="25" ry="10" fill="white"/>
+    
+    <!-- Line 7 with small leaf -->
+    <line x1="0" y1="270" x2="240" y2="270" stroke="white" stroke-width="2"/>
+    <ellipse cx="120" cy="270" rx="30" ry="12" fill="white"/>
+  </g>
+  
+  <!-- Chinese text -->
+  <text x="200" y="400" text-anchor="middle" fill="white" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" letter-spacing="8">春泥合唱团</text>
+  
+  <!-- English text -->
+  <text x="200" y="440" text-anchor="middle" fill="white" font-family="'Poppins',sans-serif" font-size="22" letter-spacing="6">CHUNNI CHOIR</text>
+</svg>
