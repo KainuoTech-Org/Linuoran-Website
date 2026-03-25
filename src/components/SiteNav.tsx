@@ -16,7 +16,6 @@ const navKeys = [
 
 export default function SiteNav() {
   const pathname = usePathname();
-  const isHome = pathname === "/";
   const { t, locale, setLocale } = useI18n();
   const [scrolled, setScrolled] = useState(false);
 
@@ -28,27 +27,16 @@ export default function SiteNav() {
 
   const locales: Locale[] = ["zh-CN", "zh-TW", "en"];
   
-  const getHref = (item: any) => {
-    if (isHome) {
-      const map: Record<string, string> = {
-         "/": "#hero", "/about": "#about", "/skills": "#skills", "/music": "#music",
-         "/performances": "#performances", "/gallery": "#gallery", "/contact": "#contact",
-      };
-      return map[item.href] || item.href;
-    }
-    return item.href;
-  };
-
   return (
     <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-700 ease-in-out ${scrolled ? "bg-[#F4F4F0]/95 backdrop-blur-md border-b border-[#E8E8E3] py-2" : "bg-transparent py-6"}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-2xl font-serif tracking-widest text-[#1C1C1A]">Li Nuoran<span className="text-[#A3907A]">.</span></Link>
         <div className="hidden lg:flex items-center gap-10">
-           {navKeys.map(k => {
-             const href = getHref(k);
-             const inner = <span className="text-[11px] uppercase tracking-[0.2em] font-sans text-[#777770] hover:text-[#1C1C1A] transition-colors">{t(k.key as any)}</span>;
-             return isHome && href.startsWith("#") ? <a key={href} href={href}>{inner}</a> : <Link key={href} href={href}>{inner}</Link>;
-           })}
+           {navKeys.map(k => (
+             <Link key={k.href} href={k.href} className={`text-[11px] uppercase tracking-[0.2em] font-sans transition-colors ${pathname === k.href ? "text-[#1C1C1A] border-b border-[#1C1C1A] pb-[1px]" : "text-[#777770] hover:text-[#1C1C1A]"}`}>
+               {t(k.key as any)}
+             </Link>
+           ))}
         </div>
         <div className="flex gap-4">
            {locales.map(l => (
