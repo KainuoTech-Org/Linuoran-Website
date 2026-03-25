@@ -12,8 +12,8 @@ export default function Contact() {
              </motion.h2>
              
              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="flex flex-col items-center gap-12 font-serif text-xl md:text-3xl">
-                <a href="mailto:859271843@qq.com" className="text-[#1C1C1A] hover:italic hover:text-[#A3907A] transition-all">
-                   859271843@qq.com
+                <a href="mailto:hi@linuoran.com" className="text-[#1C1C1A] hover:italic hover:text-[#A3907A] transition-all">
+                   hi@linuoran.com
                 </a>
                 <a href="https://music.163.com/#/artist?id=49300887" target="_blank" className="text-[#1C1C1A] hover:italic hover:text-[#A3907A] transition-all">
                    Netease Music / Li Nuoran

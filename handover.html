@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<title>網站項目交接文檔 - 李諾然</title>
+<style>
+    body { 
+        font-family: "PingFang HK", "PingFang TC", "Microsoft YaHei", sans-serif; 
+        line-height: 1.8; 
+        color: #333; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 40px; 
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        height: 100px;
+        object-fit: contain;
+    }
+    h1 { 
+        text-align: center; 
+        font-size: 26px; 
+        margin-bottom: 40px; 
+        border-bottom: 2px solid #333; 
+        padding-bottom: 15px; 
+    }
+    .meta-info { 
+        margin-bottom: 30px; 
+        font-size: 16px; 
+    }
+    .meta-info div { 
+        margin-bottom: 8px; 
+    }
+    h2 { 
+        font-size: 18px; 
+        color: #1a1a1a; 
+        margin-top: 40px; 
+        border-bottom: 1px solid #ccc; 
+        padding-bottom: 5px; 
+    }
+    .account-box { 
+        background: #f9f9f9; 
+        padding: 20px; 
+        border-radius: 4px; 
+        margin-bottom: 25px; 
+        border-left: 4px solid #555;
+    }
+    .platform { 
+        margin-bottom: 25px; 
+        padding-left: 15px;
+    }
+    .platform-title { 
+        font-weight: bold; 
+        margin-bottom: 5px; 
+        color: #000; 
+        font-size: 16px;
+    }
+    .warning { 
+        color: #555; 
+        font-size: 14px; 
+        margin-top: 5px; 
+        font-style: italic;
+    }
+    a { 
+        color: #0366d6; 
+        text-decoration: none; 
+    }
+    .footer { 
+        margin-top: 60px; 
+        font-weight: bold; 
+        font-size: 14px; 
+        padding-top: 20px;
+        border-top: 1px solid #eaeaea;
+    }
+    @media print {
+            body { padding: 0; max-width: 100%; }
+            .logo { top: 0; right: 0; }
+            .account-box { border: 1px solid #ddd; border-left: 4px solid #555; }
+            a { text-decoration: none; color: #000; }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Kainuo Logo" class="logo">
+    <h1>網站項目交接文檔</h1>
+    <div class="meta-info">
+        <div><strong>項目名稱：</strong> 專業⾳樂⼈作品集網站</div>
+        <div><strong>網站地址：</strong> <a href="https://www.linuoran.com" target="_blank">www.linuoran.com</a></div>
+        <div><strong>交付日期：</strong> 2026年2月10日</div>
+    </div>
+
+    <h2>1. 核心賬號信息 (請妥善保管)</h2>
+    <p>為了方便管理，網站相關的所有後台（代碼、服務器、域名）均已綁定至您的專屬 Outlook 郵箱。由於各平台的註冊機制不同，請注意區分 Cloudflare 與其他平台的密碼及登錄方式。</p>
+
+    <div class="account-box">
+        <strong>專屬管理郵箱 (Outlook)</strong><br>
+        賬號： linuoran2026@outlook.com<br>
+        密碼： 859271843Lnr
+    </div>
+
+    <div class="account-box" style="border-left-color: #A3907A;">
+        <strong>對外展示郵箱</strong><br>
+        地址： <a href="mailto:hi@linuoran.com">hi@linuoran.com</a><br>
+        說明： 客戶來信請統一使用此郵箱地址，郵件將自動轉發至您的 Outlook 收件箱。
+    </div>
+
+    <div class="platform">
+        <div class="platform-title">• 代碼托管 (GitHub)</div>
+        <div>用於保存網站源代碼。</div>
+        <div>登錄賬號： linuoran2026@outlook.com</div>
+        <div>登錄密碼： 859271843Lnr</div>
+        <div>→ <a href="https://github.com/login">點擊登錄 GitHub</a></div>
+    </div>
+
+    <div class="platform">
+        <div class="platform-title">• 服務器部署 (Vercel)</div>
+        <div>用於網站的全球發布和服務器自動運行。</div>
+        <div>登錄方式： 登錄時請勿輸入郵箱密碼，請直接點擊選擇 <strong>"Continue with GitHub"</strong> 進行授權登錄。</div>
+        <div>→ <a href="https://vercel.com/login">點擊登錄 Vercel</a></div>
+    </div>
+
+    <div class="platform">
+        <div class="platform-title">• 域名管理 (Cloudflare)</div>
+        <div>用於管理 www.linuoran.com 域名解析和網絡安全。</div>
+        <div>登錄賬號： linuoran2026@outlook.com</div>
+        <div>登錄密碼： 859271843Lnr.</div>
+        <div class="warning">* 註：本次域名平台使用郵箱獨立註冊，密碼最後有一個英文句號「.」，請勿使用 GitHub 快捷登錄。</div>
+        <div>→ <a href="https://dash.cloudflare.com/login">點擊登錄 Cloudflare</a></div>
+    </div>
+
+    <h2>2. 後續服務與支持</h2>
+    <p><strong>技術支持與維護： 3 個月技術維護及 3 次內容修訂。</strong></p>
+    <p>網站上線後，我們會在首 3 個月內負責底層技術維護（如服務器運行、域名流轉、安全證書等）。</p>
+    <p>如有任何前端展示內容需要修改（例如更新演唱經歷、替換音樂和專輯封面、修改照片或文字等），我們為您提供 3 次免費的內容修訂服務。請隨時聯繫我們，我們會第一時間為您處理。</p>
+
+    <div class="footer">
+        Kainuo Innovision Tech Co., Limited | 凱諾創享科技有限公司
+    </div>
+</body>
+</html>
