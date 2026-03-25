@@ -52,11 +52,17 @@ export default function MusicSection() {
                       <p className="text-[#888880] mt-3 tracking-wider font-serif text-sm leading-loose">{t(metaKey)}</p>
                     </div>
                   </div>
-                  <div className="mt-6 md:mt-0 flex items-center gap-3 text-[#A3907A] self-end md:self-auto shrink-0">
-                    <span className="text-[11px] font-sans tracking-[0.2em] uppercase transition-all">
-                      {isActive ? "收起" : "播放"}
-                    </span>
-                    <span className={`block w-6 h-px bg-[#A3907A] transition-transform duration-300 ${isActive ? "rotate-90" : ""}`}></span>
+                  <div className="mt-6 md:mt-0 self-end md:self-auto shrink-0">
+                    {isActive ? (
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-[#F4F4F0] opacity-60">
+                        <rect x="4" y="4" width="4" height="12" fill="currentColor" />
+                        <rect x="12" y="4" width="4" height="12" fill="currentColor" />
+                      </svg>
+                    ) : (
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-[#F4F4F0] opacity-40 group-hover:opacity-80 transition-opacity">
+                        <polygon points="5,3 17,10 5,17" fill="currentColor" />
+                      </svg>
+                    )}
                   </div>
                 </button>
 
@@ -69,6 +75,7 @@ export default function MusicSection() {
                         frameBorder="no"
                         width="100%"
                         height="86"
+                        allow="autoplay"
                         src={`https://music.163.com/outchain/player?type=2&id=${song.id}&auto=1&height=66`}
                         className="max-w-2xl block"
                       />
